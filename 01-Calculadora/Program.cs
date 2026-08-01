@@ -13,6 +13,12 @@ do
         break;
     }
 
+    if (!OpcaoEhValida(opcao))
+    {
+        Console.WriteLine("Opcao invalida.");
+        continue;
+    }
+
     double primeiroNumero = LerNumero("Digite o primeiro numero: ");
     double segundoNumero = LerNumero("Digite o segundo numero: ");
 
@@ -80,4 +86,12 @@ static void ExecutarOperacao(string? opcao, double primeiroNumero, double segund
             Console.WriteLine("Opcao invalida.");
             break;
     }
+}
+
+static bool OpcaoEhValida(string? opcao)
+{
+    return opcao == "1" ||
+           opcao == "2" ||
+           opcao == "3" ||
+           opcao == "4";
 }
