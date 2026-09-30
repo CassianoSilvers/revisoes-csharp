@@ -17,6 +17,11 @@ public static class Calculadora
 
     public static double Dividir(double primeiroNumero, double segundoNumero)
     {
+        if (segundoNumero == 0)
+        {
+            throw new DivideByZeroException("Nao e possivel dividir por zero.");
+        }
+
         return primeiroNumero / segundoNumero;
     }
 }

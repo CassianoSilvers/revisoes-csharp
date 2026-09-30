@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Revisoes-CSharp.csproj" />
+  <Project Path="tests/Revisoes-CSharp.Tests/Revisoes-CSharp.Tests.csproj" />
+</Solution>
